@@ -54,12 +54,12 @@ const Home = ({ name, image, heroImage }) => {
 					>
 						Contactanos
 					</Button>
-					<Button
+					{/* <Button
 						sx={name === "ARNET" ? arnetSX : forbroSX}
-						href={`/${name.toLowerCase()}/catalogo`}
+						href={`/${name.toLowerCase()}/`}
 					>
 						Catalogo
-					</Button>
+					</Button> */}
 				</div>
 			</div>
 		</Container>

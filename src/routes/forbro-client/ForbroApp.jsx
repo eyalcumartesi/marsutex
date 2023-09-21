@@ -36,7 +36,7 @@ function ForbroApp() {
 		<Box>
 			<Navbar navItems={navItems} name={"FORBRO"} />
 			<Container>
-				<Routes basename="/forbro">
+				<Routes path="/forbro">
 					<Route path="/men" element={<ProductGrid name={"Hombre"} />} />
 					<Route path="/baby" element={<ProductGrid name={"Bebe"} />} />
 					<Route
@@ -45,7 +45,7 @@ function ForbroApp() {
 							<Home name={"FORBRO"} image={imageCover} heroImage={HeroImage} />
 						}
 					/>
-					<Route path="../" element={<MarsutexApp />} />
+					<Route path="/" element={<MarsutexApp />} />
 				</Routes>
 			</Container>
 		</Box>

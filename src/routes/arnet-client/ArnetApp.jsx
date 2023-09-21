@@ -36,7 +36,7 @@ function ArnetApp() {
 		<Box>
 			<Navbar navItems={navItems} name={"Arnet Intima"} />{" "}
 			<Container>
-				<Routes basename="/arnet">
+				<Routes path="/arnet">
 					<Route path="/brasier" element={<ProductGrid name={"Brasier"} />} />
 					<Route path="/panties" element={<ProductGrid name={"Panties"} />} />
 					<Route
@@ -45,7 +45,7 @@ function ArnetApp() {
 							<Home name={"ARNET"} image={imageCover} heroImage={HeroImage} />
 						}
 					/>
-					<Route path="../" element={<MarsutexApp />} />
+					<Route path="/" element={<MarsutexApp />} />
 				</Routes>
 			</Container>
 		</Box>
