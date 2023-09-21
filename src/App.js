@@ -14,13 +14,27 @@ function App() {
 		<Box className="w-full h-full p-4">
 			<Container>
 				<Routes>
+					<Route
+						path="/forbro/*"
+						element={
+							<Routes>
+								<Route path="/" element={<ForbroApp />} />
+								<Route path="men" element={<ForBroHombre />} />
+								<Route path="baby" element={<ForBroBebe />} />
+							</Routes>
+						}
+					/>
+					<Route
+						path="/arnet/*"
+						element={
+							<Routes>
+								<Route path="/" element={<ArnetApp />} />
+								<Route path="brasier" element={<ArnetBrasier />} />
+								<Route path="panties" element={<ArnetPanties />} />
+							</Routes>
+						}
+					/>
 					<Route path="/" element={<MarsutexApp />} />
-					<Route path="/forbro" element={<ForbroApp />} />
-					<Route path="/arnet" element={<ArnetApp />} />
-					<Route path="/forbro/men" element={<ForBroHombre />} />
-					<Route path="/forbro/baby" element={<ForBroBebe />} />
-					<Route path="/arnet/brasier" element={<ArnetBrasier />} />
-					<Route path="/arnet/panties" element={<ArnetPanties />} />
 				</Routes>
 			</Container>
 		</Box>
