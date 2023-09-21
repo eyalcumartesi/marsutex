@@ -1,0 +1,34 @@
+[[redirects]]
+  from = "/arnet/panties/*"
+  to = "/arnet/panties/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/arnet/brasier/*"
+  to = "/arnet/brasier/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/forbro/baby/*"
+  to = "/forbro/baby/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/forbro/men/*"
+  to = "/forbro/men/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/arnet/*"
+  to = "/arnet/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/forbro/*"
+  to = "/forbro/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
