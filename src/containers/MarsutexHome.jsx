@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Box, Button, Typography } from "@mui/material";
 import ArnetImage from "../routes/arnet-client/arnet-cover.png";
 import ForbroImage from "../routes/forbro-client/forbro-cover.png";
+import { Link } from "react-router-dom";
 
 const MarsutexHome = () => {
 	return (
@@ -42,12 +43,8 @@ const MarsutexHome = () => {
 						<img src={ArnetImage} alt="arnet" width="250px" />
 					</div>
 					<div className="flex flex-col flex-grow justify-end">
-						<Button
-							href="/arnet"
-							variant="contained"
-							sx={{ background: "#D90429" }}
-						>
-							Ver Mas
+						<Button variant="contained" sx={{ background: "#D90429" }}>
+							<Link to="/arnet"> Ver Mas</Link>
 						</Button>
 					</div>
 				</Card>
@@ -65,11 +62,11 @@ const MarsutexHome = () => {
 					</div>
 					<div className="flex flex-col flex-grow justify-end">
 						<Button
-							href="/forbro"
+							to="/forbro"
 							variant="contained"
 							sx={{ background: "#D90429" }}
 						>
-							Ver Mas
+							<Link to="/forbro"> Ver Mas</Link>
 						</Button>
 					</div>
 				</Card>
