@@ -33,13 +33,6 @@ const Home = ({ name, image, heroImage }) => {
 				className="absolute inset-0 z-0 bg-cover bg-center flex flex-col gap-4 items-center justify-center h-screen mb-24"
 				style={{ backgroundImage: `url(${heroImage})` }}
 			>
-				{/* <Typography
-					align="center"
-					variant="h1"
-					sx={{ fontWeight: 700, fontSize: "150px", opacity: 1 }}
-				>
-					{name}
-				</Typography> */}
 				<img
 					src={image}
 					width={"800px"}
@@ -54,12 +47,12 @@ const Home = ({ name, image, heroImage }) => {
 					>
 						Contactanos
 					</Button>
-					{/* <Button
+					<Button
 						sx={name === "ARNET" ? arnetSX : forbroSX}
-						href={`/${name.toLowerCase()}/`}
+						href={`/${name.toLowerCase()}/brasier`}
 					>
 						Catalogo
-					</Button> */}
+					</Button>
 				</div>
 			</div>
 		</Container>
