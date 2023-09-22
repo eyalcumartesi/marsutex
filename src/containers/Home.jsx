@@ -49,7 +49,11 @@ const Home = ({ name, image, heroImage }) => {
 					</Button>
 					<Button
 						sx={name === "ARNET" ? arnetSX : forbroSX}
-						href={`/${name.toLowerCase()}/brasier`}
+						href={
+							name === "ARNET"
+								? `/${name.toLowerCase()}/brasier`
+								: `${name.toLowerCase()}/men`
+						}
 					>
 						Catalogo
 					</Button>
