@@ -34,7 +34,11 @@ function ProductGrid({ name }) {
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 				{allSockImageUrls.map((imageUrl, index) => (
 					<div className="flex justify-center">
-						<ProductCard key={index} imageUrl={imageUrl} index={index} />
+						<ProductCard
+							key={index}
+							imageUrl={""}
+							index={index}
+						/>
 					</div>
 				))}
 			</div>
